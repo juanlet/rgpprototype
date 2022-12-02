@@ -6,8 +6,6 @@ using UnityEngine.AI;
 namespace RPG.Movement {
     public class Mover : MonoBehaviour
     {
-        [SerializeField] Transform target;
-
         // Update is called once per frame
         void Update()
         {
@@ -21,6 +19,7 @@ namespace RPG.Movement {
 
         public void MoveTo(Vector3 destination)
         {
+            
             GetComponent<NavMeshAgent>().destination = destination;
         }
 
